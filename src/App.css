@@ -57,7 +57,7 @@ small{
 
 .button {
   color: white;
-  padding: 1rem 2rem;
+  padding: 1vh 2vw;
   border: none;
   border-radius: 20px;
   font-size: 1.5vw;
@@ -67,6 +67,7 @@ small{
     3px 3px 8px #161616,
     -3px -3px 8px #383a3a;
   transition: 0.5s;
+  height: 5vh;
 }
 
 
@@ -83,14 +84,107 @@ background: #0D1016;
   flex-wrap: wrap;
 }
 
-@media (min-width:786px){
+@media only screen and (max-width: 600px) { 
+  .card-list{
+    justify-content: center;
+  }
   .form {
-      grid-template-columns: auto 1fr auto;
+      margin: 3vw auto;
+      grid-template-columns: 2fr 1fr;
       grid-gap: 1rem;
       align-items: center;
   }
-  
-  .input {
-      margin-bottom: 0;
+
+  .label{
+    display: none;
   }
+
+  .input {
+    height: 5vh;
+    font-size: 3vw;
+    margin: 0 1vw;
+  }
+
+  .button{
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card-list{
+    justify-content: center;
+  }
+  .form {
+    margin: 3vw auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.label{
+  display: none;
+}
+
+.input {
+  height: 5vh;
+  font-size: 3vw;
+  margin: 0 1vw;
+}
+
+.button{
+  font-size: 2.5vw;
+}
+
+}
+@media only screen and (min-width: 768px) {
+  .card-list{
+    justify-content: center;
+  }
+  .form {
+    margin: 3vw auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.label{
+  display: none;
+}
+
+.input {
+  height: 5vh;
+  font-size: 2rem;
+  margin: 0 1vw;
+}
+
+.button{
+  font-size: 2rem;
+}
+
+}
+@media only screen and (min-width: 992px) {
+  .card-list{
+    justify-content: center;
+  }
+  .form {
+    margin: 3vw auto;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.label{
+  display: none;
+}
+
+.input {
+  height: 5vh;
+  font-size: 2rem;
+  margin: 0 1vw;
+}
+
+.button{
+  font-size: 2rem;
+}
+
 }
