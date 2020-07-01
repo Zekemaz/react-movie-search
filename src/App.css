@@ -1,5 +1,6 @@
 html{
   font-size: 10px;
+  color: #fff;
 }
 
 *{
@@ -9,25 +10,25 @@ html{
 }
 
 body{
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background: #272828;
 }
 
 p{
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 small{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .container{
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 40px;
+  max-width: 100vw;
+  padding: 2vw;
 }
 
 .title{
-  font-size: 4.4vw;
+  font-size: 3vw;
   text-align: center;
   color: #fff;
 }
@@ -35,37 +36,51 @@ small{
 
 .form {
   display:grid;
+  margin-bottom: 2vw;
 }
 
 .label {
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-bottom: 0.2rem;
   text-transform: uppercase;
   color: white;
 }
 
 .input {
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding: 0.5rem 2rem;
   line-height: 2.8rem;
   border-radius: 20px;
-  border: 1px solid #ddd;
+  border: none;
   margin-bottom: 1rem;
 }
 
 .button {
-  background-color: rgba(0,0,0,0.75);
   color: white;
   padding: 1rem 2rem;
-  border: 1px solid rgba(0,0,0,0.75);
+  border: none;
   border-radius: 20px;
   font-size: 1.5vw;
   cursor: pointer;
-  transition: background-color 250ms;
+  background-color:#25252c;
+  box-shadow:
+    3px 3px 8px #161616,
+    -3px -3px 8px #383a3a;
+  transition: 0.5s;
 }
 
-.button:hover {
-  background-color: rgba(0,0,0,0.85);
+
+.button:hover{
+background: #383a3a ;
+}
+.button:active{
+background: #0D1016;
+}
+
+
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width:786px){

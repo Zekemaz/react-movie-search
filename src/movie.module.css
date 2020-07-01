@@ -1,45 +1,46 @@
 .card{
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     display: flex;
-    border-radius: 10px;
     margin: 2vw;
+    border-radius: 40px;
+    background: #272828;
+    box-shadow: inset 5px 5px 13px #161616, 
+                inset -5px -5px 13px #383a3a;
 }
 .cardImage{
-    width: 30vw;
-    height: auto;
-    border-radius: 10px;
+    width: 30%;
+    border-radius: 40px;
     margin: 1vh;
 }
 .cardInfo{
-    width: 60vw;
+    width: 70%;
     text-align: center;
 }
 .cardTitle{
-    font-size: 4vw;
+    font-size: 3vw;
+    margin: 2vw 0;
 }
 .cardDesc{
     font-size: 2.5vw;
     text-align: left;
     margin: 2vw;
     text-align: justify;
-    background-color: #fff;
-    border-radius: 10px;
+    border-radius: 40px;
     padding: 1vw;
 }
 .cardPopularity{
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     margin: 2vw;
     text-align: justify;
 }
 .cardRelease{
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     margin: 2vw;
     text-align: justify;
 }
 .cardRating{
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: left;
     margin: 2vw;
     text-align: justify;
