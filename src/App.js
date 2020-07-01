@@ -27,6 +27,14 @@ export default function App(){
       }
       setQuery('');
   }
+
+  const onClick = (e) => {
+    if(query===''){
+      e.preventDefault()
+      alert('Please type a movie name')
+        
+    }
+  }
   
   return (
     <div className="container">
@@ -37,7 +45,7 @@ export default function App(){
         placeholder="i.e. Jurassic Park"
         value={query} onChange={(e) => setQuery(e.target.value)}
         />
-        <button className="button" type="submit">Search</button>
+        <button className="button" onClick={onClick} type="submit">Search</button>
       </form>
       <div className="card-list">
         {movies.filter(movie => movie.poster_path).map(movie =>(
