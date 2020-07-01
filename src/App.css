@@ -39,13 +39,6 @@ small{
   margin-bottom: 2vw;
 }
 
-.label {
-  font-size: 1vw;
-  margin-bottom: 0.2rem;
-  text-transform: uppercase;
-  color: white;
-}
-
 .input {
   font-size: 2vw;
   padding: 0.5rem 2rem;
@@ -95,9 +88,6 @@ background: #0D1016;
       align-items: center;
   }
 
-  .label{
-    display: none;
-  }
 
   .input {
     height: 5vh;
@@ -119,10 +109,6 @@ background: #0D1016;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
     align-items: center;
-}
-
-.label{
-  display: none;
 }
 
 .input {
@@ -147,10 +133,6 @@ background: #0D1016;
     align-items: center;
 }
 
-.label{
-  display: none;
-}
-
 .input {
   height: 5vh;
   font-size: 2rem;
@@ -171,10 +153,6 @@ background: #0D1016;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
     align-items: center;
-}
-
-.label{
-  display: none;
 }
 
 .input {

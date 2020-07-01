@@ -32,7 +32,6 @@ export default function App(){
         <h1 className="title">React Movie Search</h1>
 
         <form className="form" onSubmit={searchMovies}>
-          <label className="label" htmlFor="query">Movie Name</label>
           <input className="input" type="text" name="query"
           placeholder="i.e. Jurassic Park"
           value={query} onChange={(e) => setQuery(e.target.value)}
